@@ -1,0 +1,359 @@
+body {
+  font-family: 'Montserrat' sans-serif;
+  color: #111;
+  background-color: #fafafa;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+section {
+  margin-bottom: 120px;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ----------------HEADER------------- */
+.header {
+}
+
+.header-container {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
+.header-logo {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  padding-top: 26px;
+  padding-bottom: 34px;
+}
+
+.header-logo-icon {
+  display: inline-block;
+  margin-left: 4px;
+  /* padding-top: 24px;
+  padding-bottom: 32px; */
+}
+
+/*  -------------MENU-----------------*/
+.menu {
+  display: flex;
+  gap: 24px;
+  margin-left: 413px;
+  margin-right: 90px;
+}
+
+.menu-item {
+}
+
+.menu-item-link {
+  color: #111;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.menu-item-link:hover,
+.menu-item-link:focus,
+.menu-item-link:active {
+  color: #fd9222;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials-item {
+}
+
+.socials-item-link {
+}
+
+.socials-item-image {
+}
+/* ------------------------------------ */
+/* ----------------MAIN------------- */
+
+/* ----------------MOTTO------------- */
+.motto {
+  background-color: rgba(17, 17, 17, 0.6);
+  border-radius: 30px;
+}
+
+.motto-head {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.motto-button {
+  background: #fd9222;
+  border-radius: 100px;
+  border: none;
+  padding: 14px 40px;
+  width: 144px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+
+.motto-link {
+  background: rgba(17, 17, 17, 0.6);
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 183px;
+  height: 45px;
+}
+
+.motto-scroll {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+/* ------------------------------------ */
+/* -----------------ADVANTAGES------------------- */
+
+.advantages {
+  background-color: #1e1823;
+}
+
+.advantages-title {
+}
+
+.advantages-list {
+}
+
+.advantages-list-item {
+}
+
+.advantages-list-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.advantages-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ------------------------------------ */
+/* -----------------TASTE------------------- */
+
+.taste {
+}
+
+.taste-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.accent {
+  color: #fd9222;
+}
+
+.taste-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.taste-list {
+}
+
+.taste-list-item {
+  border-radius: 15px;
+  border: 1px solid #fd9222;
+  background: #fd9222;
+}
+
+.taste-list-image {
+}
+
+.taste-list-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* ------------------------------------ */
+/* -----------------MADE------------------- */
+.made {
+}
+
+.made-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.made-image {
+}
+
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.made-list {
+  background: #fff;
+  border-radius: 15px;
+}
+
+.made-list-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+/* ------------------------------------ */
+/* -----------------PRODUCTS------------------ */
+
+.products {
+}
+
+.products-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.products-list {
+}
+
+.products-list-item {
+  background: #fff;
+}
+
+.prodacts-list-image {
+}
+
+.products-list-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.products-list-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.products-list-button {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  background-color: #fafafa;
+  width: 94px;
+  height: 33px;
+}
+
+/* ------------------------------------ */
+/* -----------------SELLERS------------------ */
+
+.sellers {
+}
+.seller-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.sellers-list {
+}
+.sellers-list-item {
+  border-radius: 15px 15px 0 0;
+}
+.sellers-list-image {
+}
+.sellers-list-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
