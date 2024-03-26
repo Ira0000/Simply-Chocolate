@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat' sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #111;
   background-color: #fafafa;
 }
@@ -63,6 +63,7 @@ section {
 .header-nav {
   display: flex;
   margin-right: auto;
+
   align-items: center;
 }
 
@@ -88,7 +89,6 @@ section {
   display: flex;
   gap: 24px;
   margin-left: 413px;
-  margin-right: 90px;
 }
 
 .menu-item {
@@ -109,6 +109,8 @@ section {
 
 .socials {
   display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .socials-item {
@@ -126,14 +128,19 @@ section {
 .motto {
   background-color: rgba(17, 17, 17, 0.6);
   border-radius: 30px;
+  padding-top: 381px;
+  padding-left: 40px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
-
 .motto-head {
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  max-width: 484px;
+  margin-bottom: 32px;
 }
 
 .motto-button {
@@ -146,10 +153,12 @@ section {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  margin-right: 14px;
+  margin-bottom: 40px;
 }
 
 .motto-link {
-  background: rgba(17, 17, 17, 0.6);
+  background: transparent;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
@@ -158,6 +167,7 @@ section {
   padding: 14px 40px;
   width: 183px;
   height: 45px;
+  margin-right: 585px;
 }
 
 .motto-scroll {
@@ -179,6 +189,12 @@ section {
 }
 
 .advantages-list {
+  display: flex;
+  gap: 88px;
+  margin-left: 18px;
+  margin-right: 18px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .advantages-list-item {
@@ -188,6 +204,7 @@ section {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
+  margin-bottom: 18px;
 }
 
 .advantages-list-text {
