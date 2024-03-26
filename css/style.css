@@ -32,6 +32,10 @@ section {
   margin-bottom: 120px;
 }
 
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .container {
   max-width: 1200px;
   padding-left: 32px;
@@ -60,6 +64,7 @@ section {
 .header-container {
   display: flex;
 }
+
 .header-nav {
   display: flex;
   margin-right: auto;
@@ -101,6 +106,7 @@ section {
   line-height: 1.14;
   letter-spacing: -0.02em;
 }
+
 .menu-item-link:hover,
 .menu-item-link:focus,
 .menu-item-link:active {
@@ -133,6 +139,7 @@ section {
   margin-left: 32px;
   margin-right: 32px;
 }
+
 .motto-head {
   font-weight: 500;
   font-size: 28px;
@@ -227,7 +234,9 @@ section {
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  max-width: 412px;
   text-align: center;
+  margin: 0 auto 28px auto;
 }
 
 .accent {
@@ -240,18 +249,38 @@ section {
   line-height: 1.28571;
   letter-spacing: -0.02em;
   text-align: center;
+  max-width: 486px;
+  margin: 0 auto 50px auto;
 }
 
 .taste-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 32px;
 }
 
 .taste-list-item {
   border-radius: 15px;
   border: 1px solid #fd9222;
   background: #fd9222;
+  width: calc((100% - 96px) / 4);
+  color: #fff;
+}
+
+.taste-list-item:nth-child(even) {
+  color: #111;
+  background-color: #fff;
+}
+
+.taste-list-item:nth-child(3n + 3) {
+  color: #fff;
+  background-color: #1e1823;
+  border: 1px solid #1e1823;
 }
 
 .taste-list-image {
+  margin: 28px auto 36px auto;
 }
 
 .taste-list-text {
@@ -260,7 +289,7 @@ section {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #fff;
+  margin: 0 0 28px 28px;
 }
 
 /* ------------------------------------ */
@@ -275,20 +304,35 @@ section {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .made-image {
+}
+
+.made-container {
+  background: #fff;
+  border-radius: 15px;
+  padding: 32px;
+  width: 516px;
+  height: 400px;
 }
 
 .made-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
+  margin-bottom: 28px;
 }
 
 .made-list {
-  background: #fff;
-  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 452px;
+  gap: 24px;
+  list-style: url('../images/list-style.svg');
+  list-style-position: outside;
+  margin-left: 5px;
 }
 
 .made-list-item {
@@ -311,16 +355,26 @@ section {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .products-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 18px;
 }
 
 .products-list-item {
   background: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  width: calc((100% - 54px) / 4);
 }
 
 .prodacts-list-image {
+  margin: 32px 20px 8px 20px;
 }
 
 .products-list-subtitle {
@@ -329,6 +383,8 @@ section {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 2px auto;
 }
 
 .products-list-text {
@@ -337,6 +393,8 @@ section {
   line-height: 1.17;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
+  text-align: center;
+  margin: 0 auto 18px auto;
 }
 
 .products-list-button {
@@ -345,6 +403,9 @@ section {
   background-color: #fafafa;
   width: 94px;
   height: 33px;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-left: 88px;
 }
 
 /* ------------------------------------ */
@@ -359,8 +420,12 @@ section {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 50px;
 }
 .sellers-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
 }
 .sellers-list-item {
   border-radius: 15px 15px 0 0;
@@ -373,4 +438,175 @@ section {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  background: #fff;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 0 0 15px 15px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-align: center;
+}
+
+/* ------------------------------------ */
+/* -----------------REVIEWS----------------- */
+
+.reviews {
+}
+
+.container {
+}
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  margin-bottom: 50px;
+}
+
+.reviews-list-item {
+  width: calc((100% - 56px) / 3);
+}
+
+.reviews-list-image {
+  margin: auto;
+  margin-bottom: -38px;
+}
+
+.reviews-list-details {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  padding-top: 56px;
+  height: 200px;
+}
+
+.reviews-list-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
+}
+
+.reviews-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+  margin: 24px;
+}
+
+.reviews-button {
+  display: block;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 222px;
+  height: 50px;
+  margin: auto;
+}
+
+.footer {
+  background: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+}
+
+.footer-first-part {
+  display: flex;
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #fff;
+  max-width: 300px;
+}
+
+.footer-socials {
+  margin-left: 510px;
+  margin-right: auto;
+  /* max-width: 112px; */
+}
+
+.footer-socials-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.footer-socials-list {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-socials-item {
+}
+
+.footer-socials-item-link {
+}
+
+.contacts {
+  margin-bottom: 50px;
+}
+
+.contacts-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.contacts-list {
+}
+
+.contacts-item {
+  font-style: normal;
+  margin-bottom: 4px;
+}
+.contacts-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-nav {
+}
+
+.menu {
+}
+
+.menu-item {
+}
+
+.menu-item-link {
 }
