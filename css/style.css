@@ -28,20 +28,25 @@ ul {
 img {
   display: block;
 }
-section {
-  margin-bottom: 120px;
-}
 
 hr {
   border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
 }
 
 .container {
-  max-width: 1200px;
-  padding-left: 32px;
-  padding-right: 32px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -59,6 +64,8 @@ hr {
 
 /* ----------------HEADER------------- */
 .header {
+  padding-top: 24px;
+  padding-bottom: 32px;
 }
 
 .header-container {
@@ -78,8 +85,6 @@ hr {
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
-  padding-top: 26px;
-  padding-bottom: 34px;
   color: #111;
 }
 
@@ -96,6 +101,7 @@ hr {
 }
 
 .menu-item {
+  color: #111;
 }
 
 .menu-item-link {
@@ -131,12 +137,13 @@ hr {
 
 /* ----------------MOTTO------------- */
 .motto {
+  padding-bottom: 80px;
+}
+
+.motto-wrap {
   background-color: rgba(17, 17, 17, 0.6);
   border-radius: 30px;
-  padding-top: 381px;
-  padding-left: 40px;
-  margin-left: 32px;
-  margin-right: 32px;
+  padding: 381px 40px 32px 40px;
 }
 
 .motto-head {
@@ -160,7 +167,6 @@ hr {
   font-size: 14px;
   color: #fff;
   margin-right: 14px;
-  margin-bottom: 40px;
 }
 
 .motto-button:hover,
@@ -203,6 +209,8 @@ hr {
 
 .advantages {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .advantages-title {
@@ -213,8 +221,6 @@ hr {
   gap: 88px;
   margin-left: 18px;
   margin-right: 18px;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .advantages-list-item {
@@ -239,6 +245,8 @@ hr {
 /* -----------------TASTE------------------- */
 
 .taste {
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 .taste-title {
@@ -308,6 +316,8 @@ hr {
 /* ------------------------------------ */
 /* -----------------MADE------------------- */
 .made {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .made-title {
@@ -321,6 +331,7 @@ hr {
 }
 
 .made-image {
+  display: inline-block;
 }
 
 .made-container {
@@ -339,10 +350,7 @@ hr {
 }
 
 .made-list {
-  display: flex;
-  flex-direction: column;
   max-width: 452px;
-  gap: 24px;
   list-style: url('../images/list-style.svg');
   list-style-position: outside;
   margin-left: 5px;
@@ -354,11 +362,16 @@ hr {
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
+.made-list-item:not(:last-child) {
+  margin-bottom: 24px;
+}
 
 /* ------------------------------------ */
 /* -----------------PRODUCTS------------------ */
 
 .products {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .products-title {
@@ -425,6 +438,8 @@ hr {
 /* -----------------SELLERS------------------ */
 
 .sellers {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .seller-title {
   font-weight: 600;
@@ -465,6 +480,8 @@ hr {
 /* -----------------REVIEWS----------------- */
 
 .reviews {
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 
 .container {
@@ -501,7 +518,7 @@ hr {
   border-radius: 15px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
   background: #fff;
-  padding-top: 56px;
+  padding: 56px 24px 24px 24px;
   height: 200px;
 }
 
@@ -511,6 +528,7 @@ hr {
   line-height: 1.33;
   text-align: center;
   color: #111;
+  margin-bottom: 24px;
 }
 
 .reviews-list-text {
@@ -520,7 +538,6 @@ hr {
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
-  margin: 24px;
 }
 
 .reviews-button {
@@ -541,6 +558,9 @@ hr {
   color: #fff;
 }
 
+/* ------------------------------------ */
+/* -----------------FOOTER----------------- */
+
 .footer {
   background: #1e1823;
   padding-top: 50px;
@@ -552,6 +572,7 @@ hr {
 
 .footer-first-part {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .footer-title {
@@ -566,7 +587,6 @@ hr {
 .footer-socials {
   margin-left: 510px;
   margin-right: auto;
-  /* max-width: 112px; */
 }
 
 .footer-socials-title {
@@ -591,11 +611,9 @@ hr {
 }
 
 .contacts {
-  margin-bottom: 50px;
 }
 
 .contacts-title {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
@@ -608,9 +626,11 @@ hr {
 }
 
 .contacts-item {
-  font-style: normal;
+}
+.contacts-item:not(:last-child) {
   margin-bottom: 4px;
 }
+
 .contacts-link {
   font-weight: 400;
   font-size: 14px;
@@ -624,14 +644,13 @@ hr {
   display: flex;
 }
 
-.menu {
-  text-align: left;
+.footer-menu {
 }
 
-.menu-item {
+.footer-menu-item {
 }
 
-.menu-item-link {
+.footer-menu-item-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -639,8 +658,8 @@ hr {
   color: #fff;
 }
 
-.menu-item-link:hover,
-.menu-item-link:focus,
-.menu-item-link:active {
+.footer-menu-item-link:hover,
+.footer-menu-item-link:focus,
+.footer-menu-item-link:active {
   color: #fd9222;
 }
