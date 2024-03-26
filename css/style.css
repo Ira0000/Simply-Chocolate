@@ -80,13 +80,12 @@ hr {
   letter-spacing: -0.03em;
   padding-top: 26px;
   padding-bottom: 34px;
+  color: #111;
 }
 
 .header-logo-icon {
   display: inline-block;
   margin-left: 4px;
-  /* padding-top: 24px;
-  padding-bottom: 32px; */
 }
 
 /*  -------------MENU-----------------*/
@@ -164,6 +163,13 @@ hr {
   margin-bottom: 40px;
 }
 
+.motto-button:hover,
+.motto-button:focus,
+.motto-button:active {
+  background: #fcf1e0;
+  color: #fd9222;
+}
+
 .motto-link {
   background: transparent;
   font-weight: 600;
@@ -175,6 +181,13 @@ hr {
   width: 183px;
   height: 45px;
   margin-right: 585px;
+}
+
+.motto-link:hover,
+.motto-link:focus,
+.motto-link:active {
+  border: 1px solid #fd9222;
+  color: #fd9222;
 }
 
 .motto-scroll {
@@ -518,6 +531,14 @@ hr {
   width: 222px;
   height: 50px;
   margin: auto;
+  background-color: transparent;
+}
+
+.reviews-button:hover,
+.reviews-button:focus,
+.reviews-button:active {
+  background: #fd9222;
+  color: #fff;
 }
 
 .footer {
@@ -600,13 +621,26 @@ hr {
 }
 
 .footer-nav {
+  display: flex;
 }
 
 .menu {
+  text-align: left;
 }
 
 .menu-item {
 }
 
 .menu-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.menu-item-link:hover,
+.menu-item-link:focus,
+.menu-item-link:active {
+  color: #fd9222;
 }
