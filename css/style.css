@@ -70,16 +70,20 @@ address {
 
 .header-container {
   display: flex;
+  align-items: center;
 }
 
 .header-nav {
   display: flex;
-  margin-right: auto;
+  justify-content: space-between;
 
-  align-items: center;
+  margin-right: 90px;
 }
 
 .header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-style: italic;
   font-weight: 700;
   font-size: 18px;
@@ -88,9 +92,10 @@ address {
   color: #111;
 }
 
-.header-logo-icon {
-  display: inline-block;
+.logo-icon {
   margin-left: 4px;
+  fill: transparent;
+  stroke: #fd9222;
 }
 
 /*  -------------MENU-----------------*/
@@ -110,6 +115,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
+  transition: color 300ms ease;
 }
 
 .menu-item-link:hover,
@@ -124,29 +130,55 @@ address {
   gap: 14px;
 }
 
-.socials-item {
-}
-
 .socials-item-link {
 }
 
-.socials-item-image {
+.socials-icon {
+  fill: transparent;
+  stroke: #111111;
+  transition: stroke 300ms ease;
 }
+
+.socials-item-link:hover .socials-icon,
+.social-item-link:focus .socials-icon {
+  stroke: #fd9222;
+}
+
 /* ------------------------------------ */
 /* ----------------MAIN------------- */
 
 /* ----------------MOTTO------------- */
-.motto {
+.hero {
   padding-bottom: 80px;
 }
 
-.motto-wrap {
+.hero-wrap {
   background-color: rgba(17, 17, 17, 0.6);
   border-radius: 30px;
   padding: 381px 40px 32px 40px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.4) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url('../images/Desktop/chocolate-hero-desk.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
-.motto-head {
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-wrap {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('../images/Desktop/chocolate-hero-desk-@2x.jpg');
+  }
+}
+
+.hero-title {
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
@@ -156,7 +188,12 @@ address {
   margin-bottom: 32px;
 }
 
-.motto-button {
+.hero-btn-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.hero-btn {
   background: #fd9222;
   border-radius: 100px;
   border: none;
@@ -167,16 +204,17 @@ address {
   font-size: 14px;
   color: #fff;
   margin-right: 14px;
+  transition: background-color 300ms linear, color 300ms ease;
 }
 
-.motto-button:hover,
-.motto-button:focus,
-.motto-button:active {
-  background: #fcf1e0;
+.hero-btn:hover,
+.hero-btn:focus,
+.hero-btn:active {
+  background-color: #fcf1e0;
   color: #fd9222;
 }
 
-.motto-link {
+.hero-link {
   background: transparent;
   font-weight: 600;
   font-size: 14px;
@@ -184,24 +222,54 @@ address {
   border: 1px solid #fff;
   border-radius: 100px;
   padding: 14px 40px;
-  width: 183px;
+  min-width: 183px;
   height: 45px;
-  margin-right: 585px;
+  transition: border 300ms linear, color 300ms ease;
 }
 
-.motto-link:hover,
-.motto-link:focus,
-.motto-link:active {
+.hero-link:hover,
+.hero-link:focus,
+.hero-link:active {
   border: 1px solid #fd9222;
   color: #fd9222;
 }
 
-.motto-scroll {
+.hero-scroll {
+  display: inline-flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-left: auto;
+  transition: color 300ms ease;
+}
+
+.hero-scroll-circle {
+  display: flex;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #fff;
+  fill: #fd9222;
+  transition: background-color 300ms linear, fill 300ms ease,
+    transform 300ms ease;
+}
+
+.hero-scroll:hover,
+.hero-scroll:focus {
+  color: #fd9222;
+}
+
+.hero-scroll:hover .hero-scroll-circle,
+.hero-scroll:focus .hero-scroll-circle {
+  background-color: #fd9222;
+  fill: #ffffff;
+  transform: rotate(-90deg);
 }
 
 /* ------------------------------------ */
@@ -224,6 +292,20 @@ address {
 }
 
 .advantages-list-item {
+  position: relative;
+  width: calc((100% - 176px) / 3);
+}
+
+.advantages-list-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+  fill: #fd9222;
+  margin-bottom: 22px;
 }
 
 .advantages-list-title {
@@ -239,6 +321,18 @@ address {
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.advantages-list-item:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  left: 92%;
+  display: block;
+  content: '';
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(-90deg);
+  width: 124px;
+  height: 0px;
 }
 
 /* ------------------------------------ */
@@ -282,6 +376,8 @@ address {
 }
 
 .taste-list-item {
+  position: relative;
+  overflow: hidden;
   border-radius: 15px;
   border: 1px solid #fd9222;
   background: #fd9222;
@@ -289,15 +385,47 @@ address {
   color: #fff;
 }
 
+.taste-item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px 15px 24px 15px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #fff;
+}
+
+.taste-list-item:hover .taste-item-overlay,
+.taste-list-item:focus .taste-item-overlay,
+.taste-list-item:active .taste-item-overlay {
+  transform: translatey(0);
+}
+
 .taste-list-item:nth-child(even) {
   color: #111;
   background-color: #fff;
+}
+
+.taste-list-item:nth-child(even) .taste-hover-svg {
+  stroke: #fd9222;
 }
 
 .taste-list-item:nth-child(3n + 3) {
   color: #fff;
   background-color: #1e1823;
   border: 1px solid #1e1823;
+}
+
+.taste-hover-svg {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  fill: transparent;
+  stroke: #ffffff;
 }
 
 .taste-list-image {
@@ -311,6 +439,68 @@ address {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   margin: 0 0 28px 28px;
+}
+
+.taste-item-overlay-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.taste-item-overlay-taste {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 35px;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 24px;
+  background-color: #fd9222;
+}
+
+.overlay-taste-text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.taste-item-overlay-benefits {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #111;
+  border: 1px solid #fd9222;
+  border-radius: 35px;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-width: 93px;
+  height: 24px;
+  background-color: #fafafa;
+  margin-bottom: 10px;
+}
+
+.taste-item-overlay-benefits .overlay-taste-text {
+  color: #111;
+}
+
+.taste-item-overlay-descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 9;
 }
 
 /* ------------------------------------ */

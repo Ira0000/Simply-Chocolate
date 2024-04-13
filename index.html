@@ -23,15 +23,14 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
-          <a class="header-logo" href="./index.html"
-            >SIMPLY CHOCOLATE
-            <img
-              src="./images/chocolate.svg"
-              alt="cholate logo"
-              width="24"
-              height="24"
-              class="header-logo-icon"
-          /></a>
+          <a class="header-logo" href="./index.html">
+            SIMPLY CHOCOLATE
+            <svg class="logo-icon" width="24" height="24">
+              <use
+                href="./images/Mobile/icon.svg#icon-logo-chocolate-icon"
+              ></use>
+            </svg>
+          </a>
           <ul class="menu">
             <li class="menu-item">
               <a href="" class="menu-item-link">Home</a>
@@ -46,49 +45,52 @@
         </nav>
         <ul class="socials">
           <li class="socials-item">
-            <a class="socials-item-link" target="_blank" href=""
-              ><img
-                src="./images/instagram.svg"
-                class="socials-item-image"
-                alt="instagram icon"
-                width="24"
-                height="24"
-            /></a>
+            <a class="socials-item-link" target="_blank" href="">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/Mobile/icon.svg#icon-instagram-icon"></use>
+              </svg>
+            </a>
           </li>
           <li class="socials-item">
             <a class="socials-item-link" target="_blank" href=""
-              ><img
-                src="./images/facebook.svg"
-                class="socials-item-image"
-                alt="facebook-icon"
-                width="24"
-                height="24"
-            /></a>
+              ><svg class="socials-icon" width="24" height="24">
+                <use href="./images/Mobile/icon.svg#icon-facebook-icon"></use>
+              </svg>
+            </a>
           </li>
           <li class="socials-item">
             <a class="socials-item-link" target="_blank" href=""
-              ><img
-                src="./images/twitter.svg"
-                class="socials-item-image"
-                alt="twitter-icon"
-                width="24"
-                height="24"
-            /></a>
+              ><svg class="socials-icon" width="24" height="24">
+                <use href="./images/Mobile/icon.svg#icon-twitter-icon"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="motto">
+      <!-- HERO -->
+      <section class="hero">
         <div class="container">
-          <div class="motto-wrap">
-            <h1 class="motto-head">
+          <div class="hero-wrap">
+            <h1 class="hero-title">
               Treat yourself or a loved one to our finest ingredients for a
               moment of pure delight!
             </h1>
-            <button type="button" class="motto-button">Buy now</button>
-            <a class="motto-link" href="">How it’s made</a>
-            <a class="motto-scroll" href="">scroll down</a>
+            <div class="hero-btn-wrap">
+              <button type="button" class="hero-btn">Buy now</button>
+              <a class="hero-link" href="">How it’s made</a>
+              <a class="hero-scroll" href=""
+                >scroll down<span class="hero-scroll-circle">
+                  >
+                  <svg class="hero-scroll-icon" width="22" height="22">
+                    <use
+                      href="./images/Mobile/icon.svg#icon-angle-small-left-icon"
+                    ></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -97,6 +99,13 @@
           <h2 class="advantages-title visually-hidden">Advantages</h2>
           <ul class="advantages-list">
             <li class="advantages-list-item">
+              <div class="advantages-list-icon-wrap">
+                <svg class="advantages-icon" width="32" height="32">
+                  <use
+                    href="./images/Mobile/icon.svg#icon-advantages-chocolate-icon"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="advantages-list-title">Unsurpassed taste</h3>
               <p class="advantages-list-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -106,6 +115,13 @@
               </p>
             </li>
             <li class="advantages-list-item">
+              <div class="advantages-list-icon-wrap">
+                <svg class="advantages-icon" width="32" height="32">
+                  <use
+                    href="./images/Mobile/icon.svg#icon-advantages-coin-icon"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="advantages-list-title">Affordable price</h3>
               <p class="advantages-list-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -116,6 +132,13 @@
               </p>
             </li>
             <li class="advantages-list-item">
+              <div class="advantages-list-icon-wrap">
+                <svg class="advantages-icon" width="32" height="32">
+                  <use
+                    href="./images/Mobile/icon.svg#icon-advantages-spoon-icon"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="advantages-list-title">Own production</h3>
               <p class="advantages-list-text">
                 We take pride in our own production process, ensuring that every
@@ -127,6 +150,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- TASTE -->
       <section class="taste">
         <div class="container">
           <h2 class="taste-title">
@@ -141,6 +166,11 @@
           </p>
           <ul class="taste-list">
             <li class="taste-list-item">
+              <a class="taste-item-hover"
+                ><svg class="taste-hover-svg" width="24" height="24">
+                  <use href="./images/Mobile/icon.svg#icon-vector-icon"></use>
+                </svg>
+              </a>
               <img
                 src="./images/taste-img-1.png"
                 class="taste-list-image"
@@ -149,8 +179,30 @@
                 height="160"
               />
               <p class="taste-list-text">MILK CHOCOLATE</p>
+              <div class="taste-item-overlay">
+                <p class="taste-item-overlay-title">Milk chocolate</p>
+
+                <div class="taste-item-overlay-taste">
+                  <p class="overlay-taste-text">chocolate</p>
+                </div>
+                <div class="taste-item-overlay-benefits">
+                  <p class="overlay-taste-text">the benefits</p>
+                </div>
+                <p class="taste-item-overlay-descr">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
             </li>
             <li class="taste-list-item">
+              <a class="taste-item-hover"
+                ><svg class="taste-hover-svg" width="24" height="24">
+                  <use href="./images/Mobile/icon.svg#icon-vector-icon"></use>
+                </svg>
+              </a>
               <img
                 src="./images/taste-img-2.png"
                 class="taste-list-image"
@@ -159,8 +211,32 @@
                 height="160"
               />
               <p class="taste-list-text">MILK</p>
+              <div class="taste-item-overlay">
+                <p class="taste-item-overlay-title">Milk</p>
+
+                <div class="taste-item-overlay-taste">
+                  <p class="overlay-taste-text">milk</p>
+                </div>
+                <div class="taste-item-overlay-benefits">
+                  <p class="overlay-taste-text">the benefits</p>
+                </div>
+
+                <p class="taste-item-overlay-descr">
+                  Milk is a white liquid food produced by the mammary glands of
+                  mammals. It is the primary source of nutrition for young
+                  mammals (including breastfed human infants) before they are
+                  able to digest solid food.Early-lactation milk, which is
+                  called colostrum, contains antibodies that strengthen the
+                  immune system.
+                </p>
+              </div>
             </li>
             <li class="taste-list-item">
+              <a class="taste-item-hover"
+                ><svg class="taste-hover-svg" width="24" height="24">
+                  <use href="./images/Mobile/icon.svg#icon-vector-icon"></use>
+                </svg>
+              </a>
               <img
                 src="./images/taste-img-3.png"
                 class="taste-list-image"
@@ -169,8 +245,32 @@
                 height="160"
               />
               <p class="taste-list-text">NUTS</p>
+              <div class="taste-item-overlay">
+                <p class="taste-item-overlay-title">Nuts</p>
+
+                <div class="taste-item-overlay-taste">
+                  <p class="overlay-taste-text">nuts</p>
+                </div>
+                <div class="taste-item-overlay-benefits">
+                  <p class="overlay-taste-text">the benefits</p>
+                </div>
+
+                <p class="taste-item-overlay-descr">
+                  Almonds, pistachios, and walnuts are some types of nuts that
+                  contain healthy nutrients. When eaten as part of a
+                  nutrient-dense diet, these 9 nuts may offer benefits such as
+                  reducing your risk of heart disease. They’re a good source of
+                  fiber, healthy fats, and plant protein. Plus, they’re great on
+                  their own.
+                </p>
+              </div>
             </li>
             <li class="taste-list-item">
+              <a class="taste-item-hover"
+                ><svg class="taste-hover-svg" width="24" height="24">
+                  <use href="./images/Mobile/icon.svg#icon-vector-icon"></use>
+                </svg>
+              </a>
               <img
                 src="./images/taste-img-4.png"
                 class="taste-list-image"
@@ -179,8 +279,29 @@
                 height="160"
               />
               <p class="taste-list-text">SEMI - SWEET CHOCOLATE</p>
+              <div class="taste-item-overlay">
+                <p class="taste-item-overlay-title">semi - sweet chocolate</p>
+
+                <div class="taste-item-overlay-taste">
+                  <p class="overlay-taste-text">sweet chocolate</p>
+                </div>
+                <div class="taste-item-overlay-benefits">
+                  <p class="overlay-taste-text">the benefits</p>
+                </div>
+                <div class="taste-item-overlay-descr">
+                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                  One of the best ways to gain an understanding of this type of
+                  chocolate is to compare it to a different type of chocolate.
+                  Semisweet is darker than milk chocolate.
+                </div>
+              </div>
             </li>
             <li class="taste-list-item">
+              <a class="taste-item-hover"
+                ><svg class="taste-hover-svg" width="24" height="24">
+                  <use href="./images/Mobile/icon.svg#icon-vector-icon"></use>
+                </svg>
+              </a>
               <img
                 src="./images/taste-img-5.png"
                 class="taste-list-image"
@@ -189,8 +310,32 @@
                 height="160"
               />
               <p class="taste-list-text">CACAO</p>
+              <div class="taste-item-overlay">
+                <p class="taste-item-overlay-title">CACAO</p>
+
+                <div class="taste-item-overlay-taste">
+                  <p class="overlay-taste-text">cacao</p>
+                </div>
+                <div class="taste-item-overlay-benefits">
+                  <p class="overlay-taste-text">the benefits</p>
+                </div>
+
+                <p class="taste-item-overlay-descr">
+                  Cocoa is a natural product obtained from the fruits of the
+                  cocoa tree (Theobroma cacao). This tropical fruit contains
+                  beans, from which cocoa mass, cocoa powder and chocolate are
+                  made. The history of the use of cocoa goes back to ancient
+                  times. Already in ancient Mesoamerica, the Mayan and Aztec
+                  civilizations used cocoa in their culture and rituals
+                </p>
+              </div>
             </li>
             <li class="taste-list-item">
+              <a class="taste-item-hover"
+                ><svg class="taste-hover-svg" width="24" height="24">
+                  <use href="./images/Mobile/icon.svg#icon-vector-icon"></use>
+                </svg>
+              </a>
               <img
                 src="./images/taste-img-6.png"
                 class="taste-list-image"
@@ -199,8 +344,31 @@
                 height="160"
               />
               <p class="taste-list-text">RASPBERRY</p>
+              <div class="taste-item-overlay">
+                <p class="taste-item-overlay-title">raspberry</p>
+
+                <div class="taste-item-overlay-taste">
+                  <p class="overlay-taste-text">raspberry</p>
+                </div>
+                <div class="taste-item-overlay-benefits">
+                  <p class="overlay-taste-text">the benefits</p>
+                </div>
+
+                <p class="taste-item-overlay-descr">
+                  Raspberry is a tasty and aromatic berry plant that is popular
+                  all over the world. It belongs to the pink family and grows in
+                  many regions, including North America, Europe and Asia.
+                  Raspberries have many varieties and color variations, from red
+                  to yellow and black.
+                </p>
+              </div>
             </li>
             <li class="taste-list-item">
+              <a class="taste-item-hover"
+                ><svg class="taste-hover-svg" width="24" height="24">
+                  <use href="./images/Mobile/icon.svg#icon-vector-icon"></use>
+                </svg>
+              </a>
               <img
                 src="./images/taste-img-7.png"
                 class="taste-list-image"
@@ -209,6 +377,24 @@
                 height="160"
               />
               <p class="taste-list-text">COCONUT OIL</p>
+              <div class="taste-item-overlay">
+                <p class="taste-item-overlay-title">СOconut oil</p>
+
+                <div class="taste-item-overlay-taste">
+                  <p class="overlay-taste-text">coconut oil</p>
+                </div>
+                <div class="taste-item-overlay-benefits">
+                  <p class="overlay-taste-text">the benefits</p>
+                </div>
+
+                <p class="taste-item-overlay-descr">
+                  Coconut oil is a vegetable oil obtained from the pulp of the
+                  fruit of the coconut palm (Cocos nucifera). It is widely used
+                  in cooking, cosmetics and medicine, thanks to its numerous
+                  useful properties. Coconut oil is a source of saturated fats,
+                  especially medium-chain fatty acids, such as lauric acid.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
