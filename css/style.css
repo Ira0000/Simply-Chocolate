@@ -222,15 +222,17 @@ section {
 }
 
 .hero-title {
-  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
   /* font-size: 28px;
   line-height: 1.21; */
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   color: #fff;
   /* max-width: 484px; */
-  min-width: 295px;
+  width: 295px;
   margin-bottom: 32px;
 }
 
@@ -276,8 +278,9 @@ section {
   /* padding: 14px 40px;
   min-width: 183px;
   height: 45px; */
-  padding: 12px 28px;
-  min-width: 159px;
+  text-align: center;
+  padding-top: 12px;
+  width: 159px;
   height: 41px;
   transition: border 300ms linear, color 300ms ease;
 }
