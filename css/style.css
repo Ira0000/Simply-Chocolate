@@ -48,7 +48,8 @@ address {
 }
 
 .container {
-  max-width: 375px;
+  width: 100%;
+  /* max-width: 375px; */
   /* max-width: 1166px; */
   /* padding-left: 15px;
   padding-right: 15px; */
@@ -932,7 +933,7 @@ address {
   /* font-size: 18px; */
   width: 165px;
   height: 41px;
-  padding: 12px 28px;
+  padding: 12px auto;
   font-weight: 600;
   color: #111;
   font-size: 14px;
