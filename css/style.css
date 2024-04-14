@@ -47,9 +47,13 @@ address {
   font-style: normal;
 }
 
-.container {
+section {
   width: 100%;
-  /* max-width: 375px; */
+}
+
+.container {
+  /* width: 100%; */
+  max-width: 375px;
   /* max-width: 1166px; */
   /* padding-left: 15px;
   padding-right: 15px; */
@@ -186,6 +190,7 @@ address {
 /* ----------------MOTTO------------- */
 .hero {
   /* padding-bottom: 80px; */
+  max-width: 335px;
   padding-bottom: 79px;
 }
 
