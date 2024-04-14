@@ -190,7 +190,6 @@ section {
 /* ----------------MOTTO------------- */
 .hero {
   /* padding-bottom: 80px; */
-  max-width: 335px;
   padding-bottom: 79px;
 }
 
@@ -208,7 +207,7 @@ section {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  width: 335px;
+  max-width: 335px;
 }
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
