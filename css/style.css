@@ -27,7 +27,7 @@ ul {
 
 img {
   display: block;
-  min-width: 100%;
+  /* width: 100%; */
   height: auto;
 }
 
@@ -520,13 +520,8 @@ section {
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111;
-  overflow: hidden;
+  overflow: auto;
   width: 279px;
-  display: -webkit-box;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  /* -webkit-line-clamp: 9; */
-  -webkit-line-clamp: 8;
 }
 
 /* ------------------------------------ */
@@ -638,8 +633,6 @@ section {
 
 .prodacts-list-image {
   display: block;
-  width: 230px;
-  height: 201px;
   margin: 0 auto;
 }
 
@@ -1484,8 +1477,6 @@ section {
   .taste-item-overlay-descr {
     width: 230px;
     height: 162px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 
   .made {
